@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seashell"
+    tools:context=".FormLogin">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/tela_cheia"-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="730dp"-->
+<!--        android:src="@drawable/tela_cheia"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        />-->
+
+
+
+    <ImageView
+        android:id="@+id/pontilhado"
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pontilhado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="57dp"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="265dp"
+        android:layout_height="90dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="180dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_selecionar_entrar"
+        style="@style/button_linha"
+        android:text="@string/entrar"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="180dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_selecionar_cadastrar"
+        style="@style/button_linha2"
+        android:text="@string/cadastrar"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="180dp"
+        />
+
+    <View
+        android:id="@+id/conainerComponents"
+        style="@style/ContainerComponents"
+        android:layout_height="230dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/edit_text"
+        android:hint="Usuário"
+        android:inputType="textEmailAddress"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@id/conainerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conainerComponents"
+        app:layout_constraintTop_toTopOf="@id/conainerComponents"/>
+
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/edit_text"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:textSize="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@id/conainerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conainerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_entrar"
+        style="@style/button"
+        android:text="@string/entrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conainerComponents"
+        />
+
+    <ImageView
+        android:id="@+id/nuvens_logo"
+        android:layout_width="425dp"
+        android:layout_height="115dp"
+        android:src="@drawable/nuvens_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
