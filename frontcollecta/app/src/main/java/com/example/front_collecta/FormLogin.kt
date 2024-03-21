@@ -15,9 +15,16 @@ class FormLogin : AppCompatActivity() {
         val btnEntrar: Button = findViewById(R.id.btn_entrar)
 
         btnEntrar.setOnClickListener {
+
             val intent = Intent(this, FormHome::class.java)
             startActivity(intent)
+        }
 
+        val btnCadastrar: Button = findViewById(R.id.btn_selecionar_cadastrar)
+
+        btnCadastrar.setOnClickListener {
+            val intent = Intent(this, TelaCadastro::class.java)
+            startActivity(intent)
         }
     }
 }

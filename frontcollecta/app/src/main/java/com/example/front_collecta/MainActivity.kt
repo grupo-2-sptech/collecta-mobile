@@ -1,6 +1,8 @@
 package com.example.front_collecta
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -31,20 +33,29 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-//        findViewById<Button>(R.id.btn_linha2).setOnClickListener {
-//            showDialogNormal()
-//        }
+        findViewById<Button>(R.id.btn_selecionar_entrar).setOnClickListener {
+            entrarHome()
+        }
+
+        val btnCadastrar = findViewById<Button>(R.id.btn_selecionar_cadastrar)
+        Log.d("MeuApp", "Botão encontrado: $btnCadastrar")
+        btnCadastrar.setOnClickListener {
+            cadastro()
+        }
+
     }
 
-//    private fun showDialogNormal(){
-//        val build = AlertDialog.Builder(this)
-//        val view = layoutInflater.inflate(R.layout.customdialog, null)
-//
-//        build.setView(view)
-//
-//        dialog = build.create()
-//        dialog.show()
-//    }
+    private fun cadastro() {
+        Log.d("MeuApp", "Função cadastro() chamada")
+        val intent = Intent(this, TelaCadastro::class.java)
+        startActivity(intent)
+    }
+
+
+    private fun entrarHome(){
+        val intent = Intent(this, FormLogin::class.java)
+        startActivity(intent)
+    }
 }
 
 @Composable
