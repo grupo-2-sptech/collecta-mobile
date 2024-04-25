@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Imagem 1 -->
+        <View
+            android:id="@+id/conainerHomeHeader"
+            style="@style/ContainerHomeHeader"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <!-- Texto da campanha 1 -->
+
+        <TextView
+            android:id="@+id/icSimboloCollecta"
+            android:layout_width="465dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/baseline_search_24"
+            android:drawableLeft="@drawable/baseline_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/simboloCollecta"
+            android:layout_width="58dp"
+            android:layout_height="21dp"
+            android:src="@drawable/ic_simbolo_collecta"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="25dp"/>
+
+
+        <TextView
+            android:id="@+id/textViewCampaign1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conainerHomeHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="Campanha Destaque "
+            android:textColor="@color/tufts"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/baseline_local_fire"
+            android:textSize="18sp" />
+
+        <!-- Detalhes da campanha 1 -->
+        <TextView
+            android:id="@+id/textViewDetails1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCampaign1"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:text="Assinatura"
+            android:textColor="@color/tufts"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDetails2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDetails1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="Campanhas para apoioar mensalmente "
+            android:drawableRight="@drawable/ic_info"
+            android:textStyle="normal"
+            android:textSize="14sp" />
+
+        <!-- Imagem 2 -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDetails2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/campanhas_assinatura" />
+
+        <!-- Texto da campanha 2 -->
+        <TextView
+            android:id="@+id/textViewCampaign2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:text="Pontual"
+            android:textColor="@color/tufts"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewCampaign3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCampaign2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Campanha para apoiar até o fim do prazo "
+            android:drawableRight="@drawable/ic_info"
+            android:textStyle="normal"
+            android:textSize="14sp" />
+
+        <!-- Detalhes da campanha 2 -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCampaign3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/campanhas_assinatura"
+            android:paddingBottom="30dp"/>
+
+    </RelativeLayout>
+</ScrollView>

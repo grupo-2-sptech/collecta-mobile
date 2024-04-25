@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">front-collecta</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="cadastrar">CADASTRAR</string>
+</resources>

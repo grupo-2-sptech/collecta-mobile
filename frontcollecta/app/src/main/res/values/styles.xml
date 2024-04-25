@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ContainerComponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:height">50dp</item>
+        <item name="android:background">@drawable/container_components</item>
+        <item name="android:layout_margin">60dp</item>
+    </style>
+
+    <style name="ContainerHomeHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:height">30dp</item>
+        <item name="android:background">@drawable/container_home_header</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:layout_marginRight">60dp</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:layout_marginRight">60dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_linha">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:layout_marginRight">60dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/buttonlinha</item>
+        <item name="android:textColor">@color/tufts</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_linha2">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:layout_marginRight">60dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/buttonlinha</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/tufts</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+    </style>
+
+    <style name="ContainerModal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:height">50dp</item>
+        <item name="android:background">@drawable/modal_dialog_login</item>
+        <item name="android:layout_margin">50dp</item>
+    </style>
+
+</resources>
