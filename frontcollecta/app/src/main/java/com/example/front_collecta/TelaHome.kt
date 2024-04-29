@@ -53,7 +53,7 @@ class TelaHome : ComponentActivity() {
         }
     }
 }
-
+//oi
 @Composable
 fun Home(name: String, modifier: Modifier = Modifier) {
     Box(
