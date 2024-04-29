@@ -5,7 +5,7 @@
     android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue">
+    android:background="@color/tufts">
 
     <Button
         android:id="@+id/btnBack"
@@ -43,18 +43,18 @@
         app:layout_constraintEnd_toEndOf="@id/TxtCriarConta"
         android:textAlignment="textEnd"/>
 
+
     <View
         android:id="@+id/containerTexto"
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_width="356dp"
+        android:layout_height="600dp"
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/container_cadastro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintTop_toTopOf="@id/TipoConta"
+        app:layout_constraintVertical_bias="0.492" />
 
     <Button
         android:id="@+id/button1"
@@ -180,11 +180,12 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:padding="15dp"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/tufts"
         android:layout_marginHorizontal="40dp"
         app:layout_constraintTop_toBottomOf="@id/editEmail"
         app:layout_constraintStart_toStartOf="@id/containerTexto"
         app:layout_constraintEnd_toEndOf="@id/containerTexto"
+        app:layout_constraintVertical_bias="0.298"
         app:layout_constraintBottom_toBottomOf="@id/containerTexto"
         />
 

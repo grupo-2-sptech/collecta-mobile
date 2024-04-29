@@ -13,6 +13,13 @@ class TelaCadastro4 : AppCompatActivity() {
         findViewById<Button>(R.id.btProx).setOnClickListener{
             pt2()
         }
+        findViewById<Button>(R.id.btnBack).setOnClickListener {
+            voltar()
+        }
+    }
+    private fun voltar(){
+        val intent = Intent(this, FormLogin::class.java)
+        startActivity(intent)
     }
     private fun pt2(){
         val intent = Intent(this, TelaCadastro4::class.java)
