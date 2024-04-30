@@ -23,7 +23,7 @@ class TelaCadastro : AppCompatActivity() {
         }
     }
     private fun trocar(){
-        val intent = Intent(this, TelaCadastro3::class.java)
+        val intent = Intent(this, Campanha::class.java)
         startActivity(intent)
     }
     private fun voltar(){
